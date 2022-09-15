@@ -10,11 +10,11 @@ crossorigin=""></script>
 <script>
 var map = L.map('map')
     .addLayer(L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'))
-    .setView([51.505, -0.09], 6);
+    .setView([51.505, -0.09], 2);
 var terminator = L.terminator(
         {
 			color: '#00',
-			opacity: 0.8,
+			opacity: 0.5,
 			fillColor: '#00',
 			fillOpacity: 0.5,
 			resolution: 2,
@@ -26,7 +26,7 @@ var astro_terminator = L.terminator(
 			color: '#00',
 			opacity: 0.5,
 			fillColor: '#00',
-			fillOpacity: 0.1,
+			fillOpacity: 0.5,
 			resolution: 2,
             twilight: -18
 		}
@@ -34,9 +34,9 @@ var astro_terminator = L.terminator(
 var naut_terminator = L.terminator(
         {
 			color: '#00',
-			opacity: 0.3,
+			opacity: 0.5,
 			fillColor: '#00',
-			fillOpacity: 0.3,
+			fillOpacity: 0.5,
 			resolution: 2,
             twilight: -12
 		}
@@ -44,9 +44,9 @@ var naut_terminator = L.terminator(
 var civil_terminator = L.terminator(
         {
 			color: '#00',
-			opacity: 0.1,
+			opacity: 0.5,
 			fillColor: '#00',
-			fillOpacity: 0.1,
+			fillOpacity: 0.5,
 			resolution: 2,
             twilight: -6
 		}
